@@ -1,20 +1,12 @@
 from flask import Flask
+from census.logger import logging
 
-
-app=Flask(__name__)
-
+app = Flask(__name__)
 
 @app.route('/',methods=['GET','POST'])
 
-
 def index():
-    return "Starting PR_Adult_Income_Prediction_Project"
-
-
+    logging.info("We are testing logging module")
+    return"CICD pipeline has been created"
 if __name__=="__main__":
     app.run(debug=True)
-
-
-
-
-
