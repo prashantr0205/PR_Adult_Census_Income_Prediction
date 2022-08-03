@@ -1,6 +1,10 @@
 numpy
-flask
+Flask
 gunicorn
 sklearn
 pandas
+PyYAML
+evidently
+dill
+matplotlib
 -e .
