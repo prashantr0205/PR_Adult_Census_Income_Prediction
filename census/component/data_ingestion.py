@@ -56,8 +56,8 @@ class DataIngestion:
             os.makedirs(raw_data_dir,exist_ok=True)
 
             logging.info(f"Extracting tgz file: [{tgz_file_path}] into dir: [{raw_data_dir}]")
-            with tarfile.open(tgz_file_path) as income_prediction_tgz_file_obj:
-                income_prediction_tgz_file_obj.extractall(path=raw_data_dir)
+            with tarfile.open(tgz_file_path) as census_tgz_file_obj:
+                census_tgz_file_obj.extractall(path=raw_data_dir)
             logging.info(f"Extraction completed")
 
         except Exception as e:
