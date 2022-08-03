@@ -1,5 +1,5 @@
 from census.logger import logging
-from census.exception import IncomeException
+from census.exception import CensusException
 from census.entity.entity_config import DataIngestionConfig
 import sys,os
 import pandas as pd
